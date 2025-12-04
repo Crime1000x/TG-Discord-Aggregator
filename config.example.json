@@ -1,0 +1,30 @@
+{
+  "telegram": {
+    "api_id": 12345678,
+    "api_hash": "YOUR_TELEGRAM_API_HASH_HERE",
+    "phone_number": "+8613800000000"
+  },
+  "r2": {
+    "endpoint_url": "YOUR_ACCOUNT_ID.r2.cloudflarestorage.com",
+    "access_key": "YOUR_R2_ACCESS_KEY",
+    "secret_key": "YOUR_R2_SECRET_KEY",
+    "bucket_name": "your-bucket-name",
+    "public_url": "https://pub-your-domain.r2.dev"
+  },
+  "mappings": [
+    {
+      "comment": "示例：转发某个群组的所有消息",
+      "tg_chat_id": -1001234567890,
+      "tg_topic_id": null,
+      "discord_webhook_url": "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL_1",
+      "target_user_ids": null
+    },
+    {
+      "comment": "示例：仅转发某个群组中特定话题的消息",
+      "tg_chat_id": -1009876543210,
+      "tg_topic_id": 12345,
+      "discord_webhook_url": "https://discord.com/api/webhooks/YOUR_WEBHOOK_URL_2",
+      "target_user_ids": [123456789]
+    }
+  ]
+}
